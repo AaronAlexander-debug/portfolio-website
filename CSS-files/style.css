@@ -1,0 +1,55 @@
+#name-header {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 6.5em;
+    margin-top: 0.3em;
+    text-shadow: 6px 6px 8px grey;
+  }
+  .undercard-header {
+    margin-top: -2em;
+    font-size: 2.5em;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 6px 6px 8px grey;
+  }
+  .aboutme {
+    font-size: 1.2em;
+    top: 2em;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 6px 6px 8px grey;
+    margin: 5px;
+  }
+  .aboutme:hover {
+     animation-duration: 0.3s;
+     animation-name: inflate;
+     animation-iteration-count: 1;
+     font-size: 1.7em;
+  }
+  @keyframes inflate {
+from {
+  font-size: 1.2em;
+}
+to {
+  font-size: 1.7em;
+}
+  }
+  #index {
+  position: fixed;
+  text-align: center;
+    color: white;
+   margin: 4em;
+   bottom: 5em;
+   left: 8em;
+  }
+  #yinyang {
+    top: -2em;
+    width: 25%;
+    box-shadow: 4px 4px 15px grey;
+    border-radius: 50em;
+   }
+   .starting-img {
+     position: fixed;
+     right: 0;
+     bottom: 0;
+     min-width: 100%;
+     min-height: 100%;
+   }
+  
