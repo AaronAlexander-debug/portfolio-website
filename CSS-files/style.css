@@ -52,4 +52,38 @@ to {
      min-width: 100%;
      min-height: 100%;
    }
+   .index-link, .index-link:hover, .index-link:focus, .index-link:active {
+text-decoration: none;
+color: inherit;
+   }
+   #subsection-text {
+    position: fixed;
+    width: 60em;
+    margin-left: 200px;
+    padding: 80px 80px 460px 20px;
+    background-color: #F8F0E3;
+    border: 2px solid black;
+    box-shadow: 4px 4px 15px grey;
+  }
+  .about-me-h1 {
+    font-family: 'Bebas Neue', cursive;
+    margin-top: -0.7em;
+    font-size: 5.5em;
+    text-align: center;
+  }
+  .portrait-about-me {
+    width: 30%;
+    position: relative;
+    float: right;
+    margin-top: -50px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 20px black;
+  }
+  .about-me-p {
+    position: relative;
+    padding-right: 36%;
+    margin-top: -30px;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+  }
   
