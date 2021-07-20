@@ -6,6 +6,7 @@
   }
   .undercard-header {
     margin-top: -2em;
+    letter-spacing: 2px;
     font-size: 2.5em;
     font-family: 'Bebas Neue', cursive;
     text-shadow: 6px 6px 8px grey;
@@ -16,21 +17,10 @@
     font-family: 'Montserrat', sans-serif;
     text-shadow: 6px 6px 8px grey;
     margin: 5px;
+    transition: all .3s ease;
   }
-  .aboutme:hover {
-     animation-duration: 0.3s;
-     animation-name: inflate;
-     animation-iteration-count: 1;
-     font-size: 1.7em;
-  }
-  @keyframes inflate {
-from {
-  font-size: 1.2em;
-}
-to {
-  font-size: 1.7em;
-}
-  }
+  .aboutme:hover { font-size: 1.8em }
+
   #index {
   position: fixed;
   text-align: center;
@@ -38,6 +28,7 @@ to {
    margin: 4em;
    bottom: 5em;
    left: 8em;
+   animation: shapeIn 0.7s;
   }
   #yinyang {
     top: -2em;
@@ -64,12 +55,16 @@ color: inherit;
     background-color: #F8F0E3;
     border: 2px solid black;
     box-shadow: 4px 4px 15px grey;
+    animation: shapeIn 0.2s;
   }
+  @keyframes shapeIn { from {opacity: 0; transform:translateY(-20px);} to {opacity: 1; transform:translateY(0);} }
+
   .about-me-h1 {
     font-family: 'Bebas Neue', cursive;
     margin-top: -0.7em;
     font-size: 5.5em;
     text-align: center;
+    text-shadow: 2px 2px 5px grey;
   }
   .portrait-about-me {
     width: 30%;
@@ -82,8 +77,66 @@ color: inherit;
   .about-me-p {
     position: relative;
     padding-right: 36%;
-    margin-top: -30px;
+    margin-top: -60px;
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
   }
-  
+  .subpage-nav {
+    position: relative;
+    top: -70px;
+    left: 335px;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    word-spacing: 6px;
+  }
+  .subsection-link {
+    text-decoration: none;
+    color: inherit;
+    transition: all .3s ease;
+  } 
+  .subsection-link:focus, .subsection-link:active {
+    text-decoration: none;
+    color: inherit;
+       }
+  .subsection-link:hover {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+    text-shadow: 2px 2px 5px grey;
+  }
+  .portfolio-info {
+    font-family: 'Montserrat', sans-serif;
+    position: sticky;
+    margin-top: -10px;
+    margin-left: 0px;
+    padding-right: 35%;
+  }
+  .portfolio-header {
+    font-family: 'Bebas Neue', cursive;
+    position: relative;
+    margin-top: -60px;
+    padding: -5px;
+  }
+  .google-image {
+    width: 30%;
+    position: relative;
+    float: right;
+    margin-top: -40px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 20px black;
+  }
+  .github-link {
+    text-decoration: none;
+    color: inherit;
+    transition: all .3s ease;
+       }
+  .github-link:focus, .github-link:active {
+    text-decoration: none;
+    color: inherit;
+       }
+  .github-link:hover {
+   text-decoration: none;
+   color: inherit;
+   text-shadow: 1px 1px 3px grey;
+   }
