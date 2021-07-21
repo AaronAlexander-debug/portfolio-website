@@ -12,14 +12,16 @@
     text-shadow: 6px 6px 8px grey;
   }
   .aboutme {
-    font-size: 1.2em;
+    font-size: 1.6em;
     top: 2em;
-    font-family: 'Montserrat', sans-serif;
-    text-shadow: 6px 6px 8px grey;
-    margin: 5px;
+    letter-spacing: 4px;
+    font-family: 'Bebas Neue', cursive;
+    margin: 2px;
+  }
+  .aboutme-info {
     transition: all .3s ease;
   }
-  .aboutme:hover { font-size: 1.8em }
+  .aboutme-info:hover { font-size: 1.2em; text-shadow: 6px 6px 8px grey; }
 
   #index {
   position: absolute;
@@ -29,6 +31,9 @@
    bottom: 5em;
    left: 8em;
    animation: shapeIn 0.7s;
+  }
+  .buttons {
+    height: 1px;
   }
   #yinyang {
     top: -2em;
@@ -51,7 +56,7 @@ color: inherit;
     position: absolute;
     width: 60em;
     margin-left: 200px;
-    padding: 80px 40px 40px 20px;
+    padding: 80px 40px 10px 20px;
     background-color: #F8F0E3;
     border: 2px solid black;
     box-shadow: 4px 4px 15px grey;
@@ -84,6 +89,7 @@ color: inherit;
   }
   .subpage-nav {
     position: relative;
+    height: 30px;
     top: -70px;
     left: 335px;
     font-size: 1.3em;
@@ -103,15 +109,12 @@ color: inherit;
   .subsection-link:hover {
     text-decoration: none;
     color: inherit;
-    font-size: 1.4em;
+    font-size: 1.1em;
     text-shadow: 2px 2px 5px grey;
   }
   .portfolio-info {
     font-family: 'Montserrat', sans-serif;
-    position: sticky;
-    margin-top: -10px;
-    margin-left: 0px;
-    padding-right: 35%;
+    margin-top: -5px;
   }
   .portfolio-header {
     font-family: 'Bebas Neue', cursive;
@@ -120,11 +123,15 @@ color: inherit;
     padding: -5px;
   }
   .google-image {
-    width: 30%;
+    width: 25%;
     position: relative;
     float: right;
-    margin-top: -5px;
+    margin-right: 40px;
+    margin-top: -30px;
     border: 1px solid black;
+    transition: all .3s ease;
+  }
+  .google-image:hover {
     box-shadow: 1px 1px 8px black;
   }
   .github-link {
@@ -146,11 +153,15 @@ color: inherit;
     position: relative;
   }
   .website-image {
-    width: 30%;
+    width: 25%;
     position: relative;
     float: right;
-    margin-top: -63px;
+    margin-top: -48px;
+    margin-right: 40px;
     border: 1px solid black;
+    transition: all .3s ease;
+  }
+  .website-image:hover {
     box-shadow: 1px 1px 8px black;
   }
   .normal-link {
@@ -168,10 +179,20 @@ color: inherit;
     position: absolute;
     width: 60em;
     margin-left: 200px;
-    padding: 80px 40px 270px 20px;
+    padding: 80px 40px 10px 20px;
     background-color: #F8F0E3;
     border: 2px solid black;
     box-shadow: 4px 4px 15px grey;
     animation: shapeIn 0.2s;
     overflow-x: hidden;
   }
+  .starting-img-2 {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    opacity: 80%;
+    min-width: 100%;
+    min-height: 100%;
+    animation: fadeOut 0.2s;
+  }
+  @keyframes fadeOut { from {opacity: 100%;} to {opacity: 80%;} }
