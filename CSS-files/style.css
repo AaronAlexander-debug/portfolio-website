@@ -22,7 +22,7 @@
   .aboutme:hover { font-size: 1.8em }
 
   #index {
-  position: fixed;
+  position: absolute;
   text-align: center;
     color: white;
    margin: 4em;
@@ -47,15 +47,16 @@
 text-decoration: none;
 color: inherit;
    }
-   #subsection-text {
-    position: fixed;
+   .subsection-text {
+    position: absolute;
     width: 60em;
     margin-left: 200px;
-    padding: 80px 80px 460px 20px;
+    padding: 80px 40px 40px 20px;
     background-color: #F8F0E3;
     border: 2px solid black;
     box-shadow: 4px 4px 15px grey;
     animation: shapeIn 0.2s;
+    overflow-x: hidden;
   }
   @keyframes shapeIn { from {opacity: 0; transform:translateY(-20px);} to {opacity: 1; transform:translateY(0);} }
 
@@ -122,9 +123,9 @@ color: inherit;
     width: 30%;
     position: relative;
     float: right;
-    margin-top: -40px;
+    margin-top: -5px;
     border: 1px solid black;
-    box-shadow: 1px 1px 20px black;
+    box-shadow: 1px 1px 8px black;
   }
   .github-link {
     text-decoration: none;
@@ -140,3 +141,37 @@ color: inherit;
    color: inherit;
    text-shadow: 1px 1px 3px grey;
    }
+   .portfolio-header-2 {
+    font-family: 'Bebas Neue', cursive;
+    position: relative;
+  }
+  .website-image {
+    width: 30%;
+    position: relative;
+    float: right;
+    margin-top: -63px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 8px black;
+  }
+  .normal-link {
+    color: inherit;
+    transition: all .3s ease;
+  }
+  .normal-link:focus, .normal-link:active {
+    color: inherit;
+  }
+  .normal-link:hover {
+    color: inherit;
+    text-shadow: 1px 1px 2px grey;
+  }
+  #about-me-text {
+    position: absolute;
+    width: 60em;
+    margin-left: 200px;
+    padding: 80px 40px 270px 20px;
+    background-color: #F8F0E3;
+    border: 2px solid black;
+    box-shadow: 4px 4px 15px grey;
+    animation: shapeIn 0.2s;
+    overflow-x: hidden;
+  }
