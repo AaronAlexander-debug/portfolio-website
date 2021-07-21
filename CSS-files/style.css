@@ -30,6 +30,7 @@
    margin: 4em;
    bottom: 5em;
    left: 8em;
+   height: auto;
    animation: shapeIn 0.7s;
   }
   .buttons {
@@ -38,6 +39,8 @@
   #yinyang {
     top: -2em;
     width: 25%;
+    max-width: 100%;
+    height: auto;
     box-shadow: 4px 4px 15px grey;
     border-radius: 50em;
    }
@@ -196,3 +199,12 @@ color: inherit;
     animation: fadeOut 0.2s;
   }
   @keyframes fadeOut { from {opacity: 100%;} to {opacity: 80%;} }
+  iframe {
+    border: 1px solid black;
+  }
+  .resume-class {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -40px;
+    font-family: 'Montserrat', sans-serif;
+  }
